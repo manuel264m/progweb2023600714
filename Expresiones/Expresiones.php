@@ -4,7 +4,7 @@
     </head>
     <body>
 
-    <img src="images/ex.a.png"><br><br>
+    <img src="ex.a.png" width="300"><br><br>
         <?php
         $x = 2;
         $y = 4;
@@ -14,7 +14,7 @@
         
         ?>
  
-        <img src="images/ex.b.png">
+        <img src="ex.b.png" width="300">
 
         <?php
         //inciso b
@@ -24,7 +24,7 @@
 
         ?>
 
-        <img src="images/ex.c.png">
+        <img src="ex.c.png" width="300">
 
         <?php
         //inciso c
@@ -34,7 +34,7 @@
         echo "Resultado:". $resultado3 . "<br><br>";
         ?>
 
-        <img src="images/ex.d.png">
+        <img src="ex.d.png" width="300">
 
         <?php
         $x = 2;
@@ -42,7 +42,7 @@
         echo "Resultado:". $resultado4 . "<br><br>";
         ?>
 
-        <img src="images/ex.e.png">
+        <img src="ex.e.png" width="300">
 
         <?php
         $x = 4;
