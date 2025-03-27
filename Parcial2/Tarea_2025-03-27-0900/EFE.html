@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h2>Resultados</h2>
+    <p id="resultado"></p>
+    <script>
+        function contarLetras(cadena) {
+            let vocales = "aeiou";
+            let numVocales = 0;
+            let numConsonantes = 0;
+            let traducida = "";
+            
+            for (let i = 0; i < cadena.length; i++) {
+                let letra = cadena[i].toLowerCase();
+                
+                if (vocales.includes(letra)) {
+                    numVocales++;
+                    traducida += letra + "f" + letra;
+                } else {
+                    numConsonantes++;
+                    traducida += letra;
+                }
+            }
+            
+            let resultadoTexto = "Número de vocales: " + numVocales + "<br>" +
+                                 "Número de consonantes: " + numConsonantes + "<br>" +
+                                 "En idioma EFE: " + traducida;
+            
+            document.getElementById("resultado").innerHTML = resultadoTexto;
+        }
+        
+        contarLetras("murcielago"); 
+    </script>
+</body>
+</html>

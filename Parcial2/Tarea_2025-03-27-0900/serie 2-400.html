@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Serie de numeros</title>
+</head>
+<body>
+    <script>
+        let i;
+        let serie = [];
+        let suma = 0;
+        let mediana;
+        let promedio;
+
+        document.write("<h2>Serie numerica del 2 al 400</h2>");
+
+        for(i =2; i<=400; i+=2){
+            serie.push(i);
+            document.write(i + " ");
+            suma +=i;
+        }
+
+        promedio = suma / serie.length;
+        document.write("<br>Promedio: " + promedio + "<br>");
+
+
+        let mitad = serie.length / 2;
+        if(serie.length % 2 === 0){
+            mediana = (serie[mitad - 1] + serie[mitad]) / 2;
+        } else {
+            mediana = serie[Math.floor(mitad)];
+        } 
+
+        document.write("Mediana: " + mediana + "<br>");
+
+        document.write("Moda: No hay moda");
+    </script>
+    </body>
