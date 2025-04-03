@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Meses con ordinales</title>
+        <script>
+            function mostrarMesesYOrdinales(){
+                let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+                let ordinales = ["Primer", "Segundo", "Tercer", "Cuarto", "Quinto", "Sexto", "Septimo", "Octavo", "Noveno", "Decimo", "Decimoprimer", "Decimosegundo"];
+                let resultado = "";
+
+                for (let i = 0; i < meses.length; i++){
+                    resultado += ordinales[i] + "  mes: " + meses[i] + "<br>";
+                }
+                document.getElementById("resultado").innerHTML = resultado;
+            }
+            </script>
+    </head>
+    <body>
+        <button onclick="mostrarMesesYOrdinales()">Mostrar meses con ordinales</button>
+        <div id="resultado"></div>
+    </body>
+</html>

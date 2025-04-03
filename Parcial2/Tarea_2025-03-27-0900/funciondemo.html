@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            function demo(){
+                let arr = [1, '3', "2", true];
+                for(let i=0; i<arr.length; i++){
+                    document.write(arr[i]);
+                }
+                document.write(arr[0]+parseInt(arr[1]));
+                let arr2 = {entero:1, cadena1:'3',cadena2:"2", booleano:true};
+
+                document.write("<br>");
+                document.write(arr2["entero"]);
+                document.write(arr2.cadena1);
+            }
+        </script>
+    </head>
+    <body onload="demo()"></body>
+    <!--tambien podria ser <script>demo()</script>-->
+</html>

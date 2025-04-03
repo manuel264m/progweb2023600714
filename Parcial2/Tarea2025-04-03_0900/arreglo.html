@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Arreglo Compuesto</title>
+        <script>
+            function procesarArreglo(){
+                let arreglo = ["Hola", 5, true, " ", 10, false, "Mundo", 3, true, "!", 2, true];
+
+                let sumaNumeros = 0;
+                let concatenacionCadenas = "";
+                let resultadoAnd = true;
+
+                for (let i = 0; i < arreglo.length; i++) {
+                    if (i % 3 === 0) { 
+                        concatenacionCadenas += arreglo[i];
+                    } else if (i % 3 === 1) { 
+                        sumaNumeros += arreglo[i];
+                    } else { 
+                        resultadoAnd = resultadoAnd && arreglo[i];
+                    }
+                }
+
+                let resultado = "Suma de números: " + sumaNumeros + "<br>";
+                resultado += "Concatenación de cadenas: " + concatenacionCadenas + "<br>";
+                resultado += "Resultado AND de booleanos: " + resultadoAnd;
+
+                document.getElementById("resultado").innerHTML = resultado;
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="procesarArreglo()">Procesar Arreglo</button>
+        <div id="resultado"></div>
+    </body>
+</html>
