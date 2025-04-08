@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .tecla {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid black;
+            position: absolute;
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        #w { top: 50px; left: 110px; }
+        #a { top: 110px; left: 50px; }
+        #s { top: 110px; left: 110px; }
+        #d { top: 110px; left: 170px; }
+        #z { top: 110px; left: 250px; }
+        #x { top: 110px; left: 310px; }
+    </style>
+
+    <script>
+        function iniciar(){
+            document.addEventListener("keydown", detectarTecla);
+            document.addEventListener("keyup", soltarTecla);
+        }
+
+        function detectarTecla(){
+            let tecla = event.key.toLowerCase();
+
+            if(tecla === "w") {
+                document.getElementById("w").style.background = "red";
+            }
+            if(tecla === "a") {
+                document.getElementById("a").style.background = "blue";
+            }
+            if(tecla === "s") {
+                document.getElementById("s").style.background = "green";
+            }
+            if(tecla === "d") {
+                document.getElementById("d").style.background = "orange";
+            }
+            if(tecla === "z") {
+                document.getElementById("z").style.background = "purple";
+            }
+            if(tecla === "x") {
+                document.getElementById("x").style.background = "pink";
+            }
+        }
+
+        function soltarTecla(){
+            let tecla = event.key.toLowerCase();
+
+            if(tecla === "w") {
+                document.getElementById("w").style.background = "lightgray";
+            }
+            if(tecla === "a") {
+                document.getElementById("a").style.background = "lightgray";
+            }
+            if(tecla === "s") {
+                document.getElementById("s").style.background = "lightgray";
+            }
+            if(tecla === "d") {
+                document.getElementById("d").style.background = "lightgray";
+            }
+            if(tecla === "z") {
+                document.getElementById("z").style.background = "lightgray";
+            }
+            if(tecla === "x") {
+                document.getElementById("x").style.background = "lightgray";
+            }
+        }
+    </script>
+</head>
+<body onload="iniciar()">
+    <div id="w" class="tecla">W</div>
+    <div id="a" class="tecla">A</div>
+    <div id="s" class="tecla">S</div>
+    <div id="d" class="tecla">D</div>
+    <div id="z" class="tecla">Z</div>
+    <div id="x" class="tecla">X</div>
+</body>
+</html>
